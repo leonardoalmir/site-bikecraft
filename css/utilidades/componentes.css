@@ -9,7 +9,7 @@
     border-radius: 4px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
     text-transform: uppercase;
-    color: #320;
+    color: var(--cor-p5);
     font-size: 18px;
     line-height: 1.33;
 }
