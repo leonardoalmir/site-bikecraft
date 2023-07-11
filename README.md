@@ -5,7 +5,7 @@ Neste projeto desenvolvemos um site completo usando HTML, CSS e JavaScript. Foi 
 ## Visite o link a seguir e conheça o projeto na prática:
 
 Link da última versão do site:
-https://leonardoalmir.github.io/
+https://leonardoalmir.github.io/site-bikecraft/
 
 Link do projeto no Figma:
 [https://www.figma.com/file/bikecraft](https://www.figma.com/file/LDTVUGAn0RiUjammBvTVcZ/BikeCraft---Site-Completo?type=design&node-id=0%3A1&mode=design&t=6K4abXZVIObDbOZO-1)
