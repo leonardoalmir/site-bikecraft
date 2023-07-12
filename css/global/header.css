@@ -8,11 +8,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    box-sizing: border-box;
-    padding: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-menu {
@@ -25,6 +22,7 @@
     color: var(--cor-0);
     display: inline-block;
     padding: 16px 0px;
+    position: relative;
 }
 
 .header-menu a::after {
