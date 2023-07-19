@@ -3,5 +3,66 @@
 }
 
 .rodape {
-    
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 32px;
+}
+
+.rodape h3 {
+    margin-bottom: 32px;
+}
+
+.rodape-contato ul {
+    margin-bottom: 32px;
+}
+
+.rodape li {
+    margin-bottom: 16px;
+}
+
+.contato-lista li:nth-child(even):after {
+    content: "";
+    display: block;
+    max-width: 360px;
+    height: 2px;
+    background-color: var(--cor-11);
+    margin-top: 16px;
+}
+
+.rodape-redes {
+    display: flex;
+    gap: 32px;
+}
+
+.rodape a:hover {
+    color: var(--cor-0);
+}
+
+.rodape-copy {
+    grid-column: 1/-1;
+    margin-top: 40px;
+}
+
+@media (max-width:800px) {
+    .rodape>img {
+        display: none;
+    }
+    .rodape {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contato-lista li:nth-child(even):after {
+        max-width: 260px;
+    }
+    .rodape-copy {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .rodape {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
 }
