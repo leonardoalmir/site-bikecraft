@@ -19,9 +19,11 @@ Link do projeto no Figma:
 - Media query.
 - Lighthouse Google Chrome.
 - Otimização de imagens.
+- Classes utilitárias.
+- Variáveis em CSS para cores e tipografia.
 - Importação de arquivos CSS.
 - Minificação dos arquivos CSS.
-- Semãntica e Acessibilidade.
+- Semântica e Acessibilidade.
 - Técnicas de design (Cores e tipografia).
 - Utilizando o Figma para pegar informações de conteúdo e design.
 - Formulários.
