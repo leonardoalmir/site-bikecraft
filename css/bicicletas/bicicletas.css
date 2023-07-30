@@ -36,7 +36,7 @@
 .bicicletas-conteudo {
     display: grid;
     grid-template-columns: 1fr auto;
-    align-content: start;
+    align-content: space-around;
 }
 
 .bicicletas-conteudo h2,
@@ -60,6 +60,7 @@
 
 .bicicletas-conteudo p {
     margin-bottom: 32px;
+    max-width: 46ch;
 }
 
 .bicicletas-conteudo ul {
