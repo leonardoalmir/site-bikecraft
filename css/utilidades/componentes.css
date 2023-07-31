@@ -26,12 +26,31 @@
     color: var(--cor-2);
 }
 
+.botao.seta {
+    display: flex;
+    align-items: center;
+}
+
+.botao.seta::after {
+    content: "";
+    display: inline-block;
+    background: url("../../img/icones/seta.svg");
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    transition: transform .2s;
+}
+
 .botao:hover {
     background: linear-gradient(#FFB60d, #d98b16);
 }
 
 .botao.secundario:hover {
     background: linear-gradient(var(--cor-9), var(--cor-10));
+}
+
+.botao.seta:hover::after {
+    transform: translatex(6px);
 }
 
 @media (max-width:600px) {
