@@ -40,3 +40,21 @@
     background-color: var(--cor-0);
     border-radius:  0 5px 5px 0;
 }
+
+.orcamento-produto label {
+    background-color: #ccc;
+    padding: 20px;
+    display: inline-block;
+}
+
+.orcamento-conteudo {
+    padding: 20px;
+    background-color: #222;
+    margin: 20px 0;
+    display: none;
+}
+
+#bikecraft:checked ~ #orcamento-bikecraft, 
+#seguro:checked ~ #orcamento-seguro {
+    display: block;
+}
