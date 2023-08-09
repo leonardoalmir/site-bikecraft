@@ -1,45 +1,116 @@
 .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .form .col-2 {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .form label {
-    display: block;
-    font: 600 1rem/1.5 'Poppins', sans-serif;
-    margin-bottom: 4px;
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
 }
 
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
-    font: 400 1rem/1.5 'Roboto', sans-serif;
-    background-color: var(--cor-1);
-    border: 1px solid var(--cor-2);
-    padding: 12px;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
 .form textarea:focus {
-    outline: none;
-    border-color: var(--cor-p1);
-    background-color: var(--cor-0);
-    box-shadow: 0 0 0 2px #fea;
+  outline: none;
+  border-color: var(--cor-p1);
+  background-color: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
 }
 
-@media (max-width:600px) {
-    .form {
-        grid-template-columns: 1fr;
-    }
-    .form .col-2 {
-        grid-column: 1;
-    }
+.termos-aceite {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
+
+input[type="checkbox"] {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-2);
+}
+
+input[type="checkbox"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-p1);
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 15px;
+  border: solid var(--cor-11);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+
+.termos-label {
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .col-2 {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 430px) {
+  input[type="checkbox"]:before,
+  input[type="checkbox"]:checked:before {
+    top: initial;
+  }
+  input[type="checkbox"]:checked:after{
+    top: 16px;
+  }
+}
+
+@media (max-width: 308px) {
+    input[type="checkbox"]:checked:after{
+      top: 28px;
+    }
+  }
