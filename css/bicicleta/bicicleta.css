@@ -5,6 +5,7 @@
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background: url('../../img/dec/bottom-left.svg') no-repeat bottom left;
 }
 
 #bicicleta .titulo p {
@@ -101,6 +102,7 @@
         grid-template-columns: 1fr;
         padding-top: 40px;
         padding-bottom: 40px;
+        background: initial;
     }
     .bicicleta-imagens {
         grid-row: 2;

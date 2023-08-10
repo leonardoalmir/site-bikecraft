@@ -83,7 +83,7 @@
 
 /* Título páginas internas */
 .titulo-bg {
-    background-color: var(--cor-11);
+    background: var(--cor-11) url('../../img/dec/top-right.svg') no-repeat top 80px right 220px;
     padding-top: 60px;
     padding-bottom: 60px;
 }

@@ -14,7 +14,7 @@
 }
 
 .contato-dados {
-    background-color: var(--cor-12);
+    background: var(--cor-12) url('../../img/dec/bottom-left-form.svg') no-repeat bottom 40px left 40px;
     border-radius: 5px 0 0 5px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .contato-formulario {
-    background-color: var(--cor-0);
+    background: var(--cor-0) url('../../img/dec/bottom-right.svg') no-repeat bottom 40px right 40px;
     border-radius: 0 5px 5px 0;
 }
 
@@ -81,9 +81,11 @@
     }
     .contato-dados {
         border-radius: 5px 5px 0 0;
+        background: var(--cor-12);
     }
     .contato-formulario {
         border-radius: 0 0 5px 5px;
+        background: var(--cor-0) url('../../img/dec/bottom-right.svg') no-repeat bottom 20px right 20px;
     }
     .contato-dados h2,
     .contato-meios a:nth-child(3) {
@@ -91,5 +93,11 @@
     }
     .contato-redes {
         margin-bottom: 12px;
+    }
+}
+
+@media (max-width:380px) {
+    .contato-formulario {
+        background: var(--cor-0);
     }
 }

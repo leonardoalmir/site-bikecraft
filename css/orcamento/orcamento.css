@@ -32,7 +32,7 @@
 }
 
 .orcamento-produto {
-  background-color: var(--cor-12);
+  background: var(--cor-12) url('../../img/dec/bottom-left-form.svg') no-repeat bottom 40px left 40px;
   border-radius: 5px 0 0 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -107,7 +107,7 @@
 }
 
 .orcamento-dados {
-  background-color: var(--cor-0);
+  background: var(--cor-0) url('../../img/dec/bottom-right.svg') no-repeat bottom 40px right 40px;
   border-radius: 0 5px 5px 0;
 }
 
@@ -179,9 +179,11 @@
   }
   .orcamento-produto {
     border-radius: 5px 5px 0 0;
+    background: var(--cor-12);
   }
   .orcamento-dados {
     border-radius: 0 0 5px 5px;
+    background: var(--cor-0) url('../../img/dec/bottom-right.svg') no-repeat bottom 20px right 20px;
   }
   .orcamento-detalhes {
     grid-template-columns: 1fr 2fr;
@@ -219,5 +221,11 @@
     grid-row: 2;
     gap: 8px;
     margin-top: 0px;
+  }
+}
+
+@media (max-width:380px) {
+  .orcamento-dados {
+      background: var(--cor-0);
   }
 }
